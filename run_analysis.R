@@ -1,6 +1,6 @@
-
 #Load required packages
 library(dplyr)
+library(tidyr)
 
 filename <- "getdata_UCI_HAR_Dataset.zip"
 
@@ -35,7 +35,6 @@ colnames(test) <- features$V2
 test$activity <- y_test$V1
 test$subject <- factor(subject_test$V1)
 
-
 #Merge the training and the test sets and add labels
 dataset <- rbind(test, train)
 col_names <- colnames(dataset)
@@ -52,5 +51,5 @@ features.colnames = grep("std\\(\\)|mean\\(\\)", column.names, value=TRUE)
 data_melted <-melt(data_filtered, id = c('activitylabel', 'subject'), measure.vars = features.colnames)
 data_mean <- dcast(data_melted, subject + activitylabel ~ variable, mean)
 
-#Creating a tidy dataset file  
+#Creating a tidy dataset file
 write.table(data_mean, file = "tidydata.txt", row.names = FALSE, quote = FALSE)
