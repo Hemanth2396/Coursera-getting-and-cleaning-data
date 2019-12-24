@@ -4,7 +4,7 @@ The purpose of this project is to prepare a tidy data that can be used for later
 
 This repository contains the following files:
 
-* CodeBook.md - the code book that describes the contents of the data set and transformations used to generate the data
+* CodeBook.md - the code book that describes the data fields and transformations applied to create the tidy data
 * run_analysis.R - the R script used to create the tidy data set includes the following steps:
 	1. Download the dataset and extract the files
 	2. Merge the training and the test sets to create one data set
