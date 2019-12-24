@@ -2,15 +2,15 @@
 library(dplyr)
 library(tidyr)
 
-filename <- "getdata_UCI_HAR_Dataset.zip"
+data <- "getdata_UCI_HAR_Dataset.zip"
 
 #Download the dataset and extract the files
-if (!file.exists(filename)){
+if (!file.exists(data)){
   fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-  download.file(fileURL, filename, method="curl")
+  download.file(fileURL, data, method="curl")
 }  
 if (!file.exists("UCI HAR Dataset")) { 
-  unzip(filename) 
+  unzip(data) 
 }
 
 #Load the datasets
