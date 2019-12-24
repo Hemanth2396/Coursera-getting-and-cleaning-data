@@ -6,12 +6,12 @@ This code book summarizes the resulting data fields and transformations applied 
 
 * subject - The ID of the test subject, ranges from 1 to 30.
 * activity - The type of activity performed when the corresponding measurements were taken, string with 6 values:
-				* `WALKING`: subject was walking
-				* `WALKING_UPSTAIRS`: subject was walking upstairs
-				* `WALKING_DOWNSTAIRS`: subject was walking downstairs
-				* `SITTING`: subject was sitting
-				* `STANDING`: subject was standing
-				* `LAYING`: subject was laying
+	* `WALKING`: subject was walking
+	* `WALKING_UPSTAIRS`: subject was walking upstairs
+	* `WALKING_DOWNSTAIRS`: subject was walking downstairs
+	* `SITTING`: subject was sitting
+	* `STANDING`: subject was standing
+	* `LAYING`: subject was laying
 		
 ## Measurements
 
