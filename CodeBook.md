@@ -4,7 +4,7 @@ This code book summarizes the resulting data fields and transformations applied 
 
 ## Identifiers
 
-* subject - The ID of the test subject, ranges from 1 to 30.
+* subject - The ID of the test subject, ranges from 1 to 30
 * activity - The type of activity performed when the corresponding measurements were taken, string with 6 values:
 	* `WALKING`: subject was walking
 	* `WALKING_UPSTAIRS`: subject was walking upstairs
@@ -17,18 +17,18 @@ This code book summarizes the resulting data fields and transformations applied 
 
 All measurements are floating-point values, normalised and bounded within [-1,1].
 
-* tBodyAccMeanX
-* tBodyAccMeanY
-* tBodyAccMeanZ
-* tBodyAccStdX
-* tBodyAccStdY
-* tBodyAccStdZ
 * tGravityAccMeanX
 * tGravityAccMeanY
 * tGravityAccMeanZ
 * tGravityAccStdX
 * tGravityAccStdY
 * tGravityAccStdZ
+* tBodyAccMeanX
+* tBodyAccMeanY
+* tBodyAccMeanZ
+* tBodyAccStdX
+* tBodyAccStdY
+* tBodyAccStdZ
 * tBodyAccJerkMeanX
 * tBodyAccJerkMeanY
 * tBodyAccJerkMeanZ
@@ -99,7 +99,7 @@ All measurements are floating-point values, normalised and bounded within [-1,1]
 
 ## Transformations
 
-The following transformations were applied to form a tidy dataset:
+The below transformations were applied to form a tidy dataset:
 
 1. Merge the training and the test sets to create one data set.
 
