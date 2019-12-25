@@ -46,9 +46,9 @@ data_filtered <- dataset[, col_names_filtered]
 #Add descriptive values for activity labels
 data_filtered$activitylabel <- factor(data_filtered$activity, labels= c("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"))
 
-features_colnames = grep("std\\(\\)|mean\\(\\)", col_names, value=TRUE)
+features_column_names = grep("std\\(\\)|mean\\(\\)", col_names, value=TRUE)
 
-data_melted <-melt(data_filtered, id = c('activitylabel', 'subject'), measure.vars = features_colnames)
+data_melted <-melt(data_filtered, id = c('activitylabel', 'subject'), measure.vars = features_column_names)
 data_mean <- dcast(data_melted, subject + activitylabel ~ variable, mean)
 
 #Creating a tidy dataset file
