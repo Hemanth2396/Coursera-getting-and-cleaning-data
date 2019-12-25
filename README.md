@@ -6,7 +6,7 @@ This repository contains the following files:
 
 * CodeBook.md - the code book that describes the data fields and transformations applied to create the tidy data
 * run_analysis.R - the R script used to create the tidy data set includes the following steps:
-	1. Download the dataset and extract the files
+	1. Download the dataset and load the files
 	2. Merge the training and the test sets to create one data set
 	3. Extract only the measurements on the mean and standard deviation for each measurement
 	4. Use descriptive activity names to name the activities in the data set
